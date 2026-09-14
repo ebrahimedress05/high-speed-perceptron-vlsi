@@ -1,0 +1,15 @@
+# Cadence Virtuoso working files
+*.cdslck*
+*.oa
+*.oa.cdslck*
+CDS.log
+*.log
+.oalib
+*.dm
+*.sdb
+*.rdb
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
