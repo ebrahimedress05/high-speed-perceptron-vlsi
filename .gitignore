@@ -1,13 +1,11 @@
-# Cadence Virtuoso working files
+# Cadence Virtuoso session/run artifacts (not part of the design database)
 *.cdslck*
-*.oa
-*.oa.cdslck*
 CDS.log
 *.log
-.oalib
-*.dm
-*.sdb
 *.rdb
+sevSaveDir/
+**/adexl/test_states/
+thumbnail_*.png
 
 # OS / editor
 .DS_Store

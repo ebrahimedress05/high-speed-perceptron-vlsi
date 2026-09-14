@@ -20,9 +20,15 @@ This repository documents the architecture, and — most importantly — the **p
 │   ├── architecture.md        # System overview: barrel shifter, CLA, top-level perceptron
 │   ├── delay-analysis.md      # Gate-level, multiplier, CLA adder and full-perceptron delay (hand vs. sim)
 │   └── power-analysis.md      # Dynamic power hand analysis vs. Cadence ADE measurement
-└── results/
-    └── summary.md             # Consolidated numeric results table (delay + power, hand vs. sim, error %)
+├── results/
+│   └── summary.md             # Consolidated numeric results table (delay + power, hand vs. sim, error %)
+└── cadence/
+    ├── README.md               # How to open/reattach the PDK and continue work in Virtuoso
+    ├── cds.lib                 # Library definition file
+    └── PROJECT/                # Cadence Virtuoso OA library (schematics, symbols, testbenches)
 ```
+
+The `cadence/PROJECT/` folder is the actual working design database (schematics, symbols, and ADE-XL testbench setups for every cell, from the base gates up to the full perceptron) so the project can be reopened and continued in Virtuoso, not just read about. See [`cadence/README.md`](cadence/README.md) for setup instructions and a note on the (proprietary, not included) PDK dependency.
 
 ## Design Summary
 
