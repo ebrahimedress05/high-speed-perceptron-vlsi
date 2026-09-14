@@ -10,7 +10,6 @@ This repository documents the architecture, and — most importantly — the **p
 - Verified functionally at 1 GHz across all 16 weight combinations and both positive/negative operands.
 - Full delay breakdown (gate-by-gate) for the multiplier and the CLA adder, hand-calculated and cross-checked against Cadence simulation.
 - Power analysis (dynamic switching power) for the multiplier, hand-calculated vs. simulated.
-- Bonus: multiplier physical layout (DRC/LVS clean), with pre-layout vs. post-layout (PEX) delay degradation analysis.
 
 ## Repository Structure
 
@@ -20,8 +19,7 @@ This repository documents the architecture, and — most importantly — the **p
 ├── docs/
 │   ├── architecture.md        # System overview: barrel shifter, CLA, top-level perceptron
 │   ├── delay-analysis.md      # Gate-level, multiplier, CLA adder and full-perceptron delay (hand vs. sim)
-│   ├── power-analysis.md      # Dynamic power hand analysis vs. Cadence ADE measurement
-│   └── layout-and-pex.md      # Bonus: layout strategy, DRC/LVS, pre- vs. post-layout delay
+│   └── power-analysis.md      # Dynamic power hand analysis vs. Cadence ADE measurement
 └── results/
     └── summary.md             # Consolidated numeric results table (delay + power, hand vs. sim, error %)
 ```
@@ -48,8 +46,6 @@ See [`docs/architecture.md`](docs/architecture.md) for the full block-level desc
 | CLA adder delay | 116.42 ps | 118.9 ps | 2.09% |
 | Full perceptron delay | 155.689 ps | 165.8 ps | 6.10% |
 | Multiplier dynamic power | 10.25 µW | 11.33 µW | 9.53% |
-
-Post-layout (parasitic-extracted) delay degradation for the multiplier ranged from **~13% (best case)** to **~74% (worst case)** relative to the pre-layout schematic delay — see [`docs/layout-and-pex.md`](docs/layout-and-pex.md).
 
 ## Notes
 
