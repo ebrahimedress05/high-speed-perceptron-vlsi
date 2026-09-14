@@ -17,6 +17,10 @@
 - Cover page, abstract, and table of contents.
 - Section 8, Layout Implementation Strategy (bonus physical-design section), and everything after it - out of scope for this repository.
 
+## Image quality
+
+The embedded screenshot images (Cadence ADE/schematic captures) were re-processed with a mild unsharp-mask filter and re-encoded at a higher JPEG quality than the source, to improve on-screen clarity. Vector-based diagrams and tables were left untouched (they were already lossless). No content, cropping, or page layout was altered.
+
 ## Why this file exists
 
 The full original report also contains layout/PEX content and cover/administrative pages that are out of scope here. This excerpt keeps only the material that documents the actual digital design and its delay/power characterization, so the source and the summarized `docs/` pages stay traceable to each other.
